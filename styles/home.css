@@ -1,0 +1,145 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(198, 197, 183);
+    margin: 0;
+    padding: 0;
+  
+    
+}
+header{
+    display: flex;
+    border: 3px;
+    background:rgb(180, 64, 64);
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    /*justify-content: space-evenly;*/
+
+}
+header div {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-items: space-between;
+    
+    
+}
+   
+header img{
+    display:flexbox;
+    border: 3px;
+    width: 100px;
+    height:200px;
+    object-fit: contain;
+}
+header a{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: rgb(255, 244, 241);
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 10px;
+    padding: 20px;
+
+}  
+.grid-box {
+    background-color: #3c37707c;
+    border: 2px solid #c9a72c;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0 10px;
+}
+.grid-box img{
+    display:grid;
+    border: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    align-items: center;
+    justify-items: center;
+    object-fit: scale-down;
+}
+#courses, h1{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+
+}  
+.flex-box1, .flex-box2, .flex-box3, .flex-box4,.flex-box5, .flex-box6{
+    
+    background-color:  #3c37707c;
+    border: 2px solid #c9a72c;
+    padding: 20px;
+    width: calc(55.55% - 10px - 2 * 20px / 3);
+    text-align: center;
+    margin: 0 10px;
+
+}
+button{
+    background-color: rgb(197, 220, 220);
+}
+.course-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.course-code{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+   
+    
+}
+
+footer {
+    display: flex;
+    background:rgb(180, 64, 64);
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Sociallinks{
+    display: flex;
+    border: 3px;
+    background:rgb(180, 64, 64);
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+
+}
+footer nav.Sociallinks a {
+    text-decoration: none;
+}
+
+footer  img {
+    
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
