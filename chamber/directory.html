@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lilongwe Chambers of Commence">
+    <meta property="og:description" content="A site that provide information about businesses, events,conferences and general information about Lilongwe the Capital city of Malawi">
+    <meta property="og:url" content=" https://chagon-nehe.github.io/wdd231/">
+    <meta property="og:image" content="images/Lilongwepic.webp" >
+    <title>Lilongwe Chambers of Commence</title>
+    <meta name="description" content="Directory page">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="x-icon">
+    <script src="scripts/directory.js"  defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="Logo-box">
+            <img src="images/LccLogo.png" alt="Logo" class="center"> 
+            <div class="logo-text">
+                <span>Lilongwe</span>
+                <p> Chambers of Commerce</p>  
+            </div>
+            
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="Home">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <article class="grid">
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Lilongwe Chambers of Commerce</h1>
+                <p>Your gateway to business opportunities in Malawi's capital city.</p>
+                </div>
+            <div class="hero-image">
+                <img src="images/Lilongwelog.jpg" alt="Lilongwe City"> 
+                
+            </div>
+        </section>
+        <h1>Home</h1>
+        <section id="Events, current-weather,weather-forecast">
+            <div class="grid-container">
+                <div class="grid-box">
+                    <h2>Events</h2>
+                    <p>Upcoming events in Lilongwe</p>
+                </div>
+                <div class="grid-box">
+                    <h2>Current Weather</h2>
+                    <p>Current weather in Lilongwe</p>
+                </div>
+                <div class="grid-box">
+                    <h2>Weather Forecast</h2>
+                    <p>Weather forecast for the next week</p>
+                </div>
+            </div>
+
+        </section>
+        <h1 id= "dire">Directory</h1>
+
+        <section id="directory">
+            <div class="menu">
+		        <button id="grid">Grid</button>
+		        <button id="list">List</button>
+	        </div>
+            <section id="members-display"></section>
+            </section>
+           
+        </article>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce    Malawi <img src="images/malawilog1.png"></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+        <nav class="Sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png"  alt="facebook"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png"  alt="instagram"></a>
+            <a href="https://x.com">
+                <img src="images/x.png"  alt="x"></a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png"  alt="linkedin"></a>
+        </nav>
+    </footer>
+</body>
+</html>
