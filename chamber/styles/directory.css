@@ -112,7 +112,7 @@ header span{
     margin-bottom: 20px;
    
 }
-#Events, #current-weather,#weather-forecast {
+#Events, #current-weather ,#weather-forecast {
     position: absolute;
     top: 5px;
     right: 5px;
