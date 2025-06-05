@@ -1,0 +1,69 @@
+#spotlight-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#spotlight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* To show 3 cards responsively */
+    gap: 20px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background for spotlights */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+#spotlight-card:hover {
+    background-color: var(--directory-item-hover-background);
+}
+
+.member-card {
+    background-color: #ffffff;
+    border: 1px solid #cceeff; /* Blue border */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute content nicely */
+    height: 100%; /* Make cards same height in the grid */
+}
+
+.member-card h3 {
+    color: #0056b3; /* Darker blue for name */
+    margin-top: 0;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.member-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px; /* Slightly rounded corners for images */
+    margin-bottom: 10px;
+    object-fit: contain; /* Ensures entire image is visible */
+}
+
+.member-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.member-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-all; /* Helps with long URLs */
+}
+
+
+
+.member-display:hover {
+    color: var(--directory-item-hover-background);}
+
+
+

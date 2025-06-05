@@ -11,11 +11,15 @@
     <meta name="description" content="Directory page">
     <meta name="author" content="Chawanangwa Gondwe">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/spotlight.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon1.ico" type="x-icon">
     <script src="scripts/directory.js"  defer></script>
+    <script src="scripts/index.js" defer></script>
+    
 
 </head>
 <body>
@@ -47,20 +51,49 @@
     </header>
     <main>
         <article class="grid">
-        
+        <section id="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to Lilongwe Chambers of Commerce</h1>
+                <p>Your gateway to business opportunities in Malawi's capital city.</p>
+                <button href="/chamber/join.html" class="join-button">Join Now</button>
+                <button href="/chamber/discover.html" class="discover-button">Discover More</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/lilongwelog.jpg" alt="Lilongwe City"> 
+                
+            </div>
         </section>
-        <h1 id= "dire">Directory</h1>
+        <h1>Home</h1>
+        <section id="weather">
+            <div class="grid-container">
+                <div class="grid-box">
+                    <h2>Events</h2>
+                    <p>Upcoming events in Lilongwe</p>
+                </div>
+                <div class="grid-box">
+                      <h2>Current Weather</h2>
+                    <div class="card">
+                    <h2 id="city"></h2>
+                    <img id="icon" src="" alt="Weather Icon" />
+                    <p id="description"> </p>
+                    <p id="temperature"></p>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <h2>Weather Forecast</h2>
+                    <div id="forecast-display"></div>
+                </div>
+            </div>
 
-        <section id="directory">
-            <div class="menu">
-		        <button id="grid">Grid</button>
-		        <button id="list">List</button>
-	        </div>
-            <section id="members-display"></section>
         </section>
-           
+        <h1 class= "highlights">Member Spotlights</h1>
+        <section id="spotlight-section">
+            <div id="spotlight-cards"></div>
+        </section>
+      
         </article>
     </main>
+    <script  src="/weather/scripts/weather.js"></script>
     <footer>
         <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce    Malawi <img src="images/malawilog1.png"></p>
         <p>Last modified: <span id="last-modified"></span></p>

@@ -112,6 +112,184 @@ header span{
     margin-bottom: 20px;
    
 }
+/*Hamburger Menu (Hidden by Default on Desktop) */
+.menu-toggle {
+    display: none; /* Hide on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001; /* Ensure button is above menu when open */
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:var(--directory-text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Styles for when menu is active (JS adds 'is-active' class) */
+.menu-toggle.is-active .hamburger:nth-child(2) {
+    opacity: 0; /* Middle bar disappears */
+}
+
+.menu-toggle.is-active .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Top bar rotates to form 'X' */
+}
+
+.menu-toggle.is-active .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Bottom bar rotates to form 'X' */
+}
+/* Mobile Navigation Overlay */
+.main-nav {
+    /* Initially hidden on mobile and positioned off-screen */
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color:var(--directory-text-color); /* Slightly darker background for mobile menu */
+    max-height: 0; /* Start hidden */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease-out; /* Smooth slide transition */
+    flex-direction: column; /* Stack links vertically */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items */
+}
+
+.main-nav.is-open {
+    max-height: 300px; /* Adjust based on content. Use a large enough value */
+    /* Alternatively, you could use 'height: auto;' but transition won't work well */
+}
+
+.main-nav .nav-list {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    gap: 0; /* Remove gap for vertical list */
+}
+
+.main-nav .nav-list li {
+    width: 100%;
+    padding:10px 0;
+}
+
+.main-nav .nav-list a {
+    display: flex; /* Make links fill their space */
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* Center text */
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: var(--directory-link-color);
+}
+
+.main-nav .nav-list a:hover {
+    background-color: var(--directory-item-hover-background); /* Highlight on hover */
+    color: var(--directory-item-active-background);
+}
+
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hide desktop nav on small screens */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    /* When the menu is open, the main-nav will become visible */
+    /* Handled by JS adding 'is-open' class */
+}
+
+/* Optional: Adjust for smaller tablets if needed */
+@media (min-width: 769px) {
+    .main-nav {
+        /* Ensure desktop nav is always visible and reset mobile styles */
+        position: static;
+        max-height: none;
+        overflow: visible;
+        background-color: transparent;
+        flex-direction: row; /* Ensure links are horizontal */
+    }
+
+    .main-nav .nav-list {
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        gap: 2px; /* Restore desktop gap */
+    }
+
+    .main-nav .nav-list a {
+        padding: 5px 10px;
+        color: var(--directory-header-text-color); /* Restore desktop link color */
+    }
+}
+#weather-section {
+    background-color:var(--directory-header-background);
+    border: var(--directory-background);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#current-weather p, #forecast-display p {
+    margin: 5px 0;
+}
+
+#current-weather img, .forecast-day-card img {
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 30px; /* Adjust as needed */
+    height: auto;
+}
+
+#forecast-display {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.forecast-day-card {
+    border: 1px solid var(--directory-item-active-background);
+    border-radius: 6px;
+    padding: 10px;
+    background-color:var(--directory-item-background);
+    text-align: center;
+    flex: 1; /* Distribute space evenly */
+    max-width: 150px; /* Limit width */
+}
+.card{
+    border: var(--directory-background);
+    border-radius: 10px;
+    background-color: var(--directory-header-background);
+}
+.card h2 {
+    color: var(--directory-text-color);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.card #temperature {
+    font-size: 2rem;
+    color: var(--directory-text-color);
+    margin: 10px 0;
+}
+.card #description {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--directory-text-color);
+    margin: 5px 0;
+}
 #Events, #current-weather ,#weather-forecast {
     position: absolute;
     top: 5px;

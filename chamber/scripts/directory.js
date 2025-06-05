@@ -78,7 +78,7 @@ async function getMembers() {
 
 // Call the function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', getMembers);
-
+// Function to display members
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
@@ -98,7 +98,28 @@ function showList() {
 	display.classList.remove("grid");
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    const navLinks = document.querySelectorAll('.nav-list a'); // Get all navigation links
 
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('is-open');
+            menuToggle.classList.toggle('is-active'); // For hamburger animation
+        });
+
+        // Optional: Close menu when a link is clicked (useful for single-page apps)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('is-open')) {
+                    mainNav.classList.remove('is-open');
+                    menuToggle.classList.remove('is-active');
+                }
+            });
+        });
+    }
+});
 
 // Get the current year
     const currentYear = new Date().getFullYear();

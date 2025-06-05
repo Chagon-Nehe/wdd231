@@ -1,0 +1,160 @@
+/* Define your color variables */
+:root {
+    --directory-background: #cf5c36ff;
+    --directory-text-color: #6a3127ff;
+    --directory-link-color: #cf5c36ff;
+    --directory-link-hover-color: #f2d69fff;
+    --directory-border-color: #dcd8d8;
+    --directory-header-background: #efc88bff;
+    --directory-header-text-color: #050517ff;
+    --directory-item-background: #d3d5d7ff;
+    --directory-item-hover-background: #f4e3b2ff;
+    --directory-item-active-background: #559b8c;
+}
+
+/* Hero Container - The main wrapper */
+#hero-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for your hero section */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Image - The image itself */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Puts the image behind the text */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%); /* Optional: Slightly darken the image for better text readability */
+}
+
+/* Hero Content - The text and buttons overlay */
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Puts the text on top of the image */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff; /* Keep text white for strong contrast against the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow for better readability */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    /* You could use --directory-header-text-color here if you wanted a dark heading on a bright image, 
+       but white provides better contrast over most images. */
+}
+
+.hero-content p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+/* Buttons Styling */
+.join-button,
+.discover-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-button {
+    /* Using your directory primary color for the main call to action */
+    background-color: var(--directory-background);
+    color: white; /* Keeping text white for contrast */
+}
+
+.join-button:hover {
+    /* Using your directory hover color for the primary button hover */
+    background-color: var(--directory-link-hover-color);
+    color: var(--directory-header-text-color); /* Change text color on hover for contrast */
+    transform: translateY(-2px);
+}
+
+.discover-button {
+    /* Using a secondary color from your palette for the discover button */
+    background-color: var(--directory-text-color); /* A darker, rich color */
+    color: white;
+}
+
+.discover-button:hover {
+    /* Another hover color from your palette */
+    background-color: var(--directory-item-hover-background);
+    color: var(--directory-header-text-color); /* Change text color on hover */
+    transform: translateY(-2px);
+}
+
+/* Basic Responsiveness (remains the same) */
+@media (max-width: 768px) {
+    #hero-container {
+        height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .join-button,
+    .discover-button {
+        font-size: 1em;
+        padding: 10px 20px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero-container {
+        height: 350px;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .hero-content {
+        padding: 10px;
+    }
+    .join-button,
+    .discover-button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
