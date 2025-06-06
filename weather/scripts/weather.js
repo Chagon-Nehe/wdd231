@@ -121,3 +121,4 @@ async function getThreeDayForecast() {
 document.addEventListener('DOMContentLoaded', () => {
     getThreeDayForecast();
 });
+

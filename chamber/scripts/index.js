@@ -124,3 +124,5 @@ document.querySelector('.join-button').addEventListener('click', function() {
 document.querySelector('.discover-button').addEventListener('click', function() {
     window.location.href = this.dataset.href;
 });
+
+
