@@ -38,8 +38,8 @@
             <ul class="nav-list">
                 <li><a href="/chamber/index.html">Home</a></li>
                 <li><a href="/chamber/directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="#/chamber/discover.html">Discover</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" aria-label="Toggle navigation">
@@ -55,8 +55,8 @@
             <div class="hero-content">
                 <h1>Welcome to Lilongwe Chambers of Commerce</h1>
                 <p>Your gateway to business opportunities in Malawi's capital city.</p>
-                <button href="/chamber/join.html" class="join-button">Join Now</button>
-                <button href="/chamber/discover.html" class="discover-button">Discover More</button>
+                <button data-href="/chamber/join.html" class="join-button">Join Now</button>
+                <button data-href="/chamber/discover.html" class="discover-button">Discover More</button>
             </div>
             <div class="hero-image">
                 <img src="images/lilongwelog.jpg" alt="Lilongwe City"> 
@@ -73,7 +73,7 @@
                 <div class="grid-box">
                       <h2>Current Weather</h2>
                     <div class="card">
-                    <h2 id="city"></h2>
+                    <h3 id="city"></h3>
                     <img id="icon" src="" alt="Weather Icon" />
                     <p id="description"> </p>
                     <p id="temperature"></p>

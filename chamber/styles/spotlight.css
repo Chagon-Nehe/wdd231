@@ -1,3 +1,16 @@
+/* Define your color variables :https://coolors.co/050517-6a3127-cf5c36-df9261-efc88b-f2d69f-f4e3b2-d3d5d7*/
+:root {
+    --directory-background: #cf5c36ff;
+    --directory-text-color: #6a3127ff;
+    --directory-link-color: #cf5c36ff;
+    --directory-link-hover-color: #f2d69fff;
+    --directory-border-color: #dcd8d8;
+    --directory-header-background: #efc88bff;
+    --directory-header-text-color: #050517ff;
+    --directory-item-background: #d3d5d7ff;
+    --directory-item-hover-background: #f4e3b2ff;
+    --directory-item-active-background: #559b8c;
+}
 #spotlight-section {
     margin-top: 30px;
     margin-bottom: 30px;

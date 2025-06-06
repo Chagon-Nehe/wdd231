@@ -38,7 +38,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(60%); /* Optional: Slightly darken the image for better text readability */
+    filter: brightness(50%); /* Optional: Slightly darken the image for better text readability */
 }
 
 /* Hero Content - The text and buttons overlay */
@@ -56,7 +56,7 @@
     align-items: center;
     text-align: center;
 
-    color: #fff; /* Keep text white for strong contrast against the image */
+    color:var(--directory-border-color); /* Keep text white for strong contrast against the image */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow for better readability */
     padding: 20px;
 }
@@ -65,8 +65,9 @@
     font-size: 3.5em;
     margin-bottom: 15px;
     font-weight: bold;
-    /* You could use --directory-header-text-color here if you wanted a dark heading on a bright image, 
-       but white provides better contrast over most images. */
+    color: var(--directory-border-color); 
+    padding: 10px 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow for better readability */
 }
 
 .hero-content p {
@@ -155,6 +156,7 @@
     .discover-button {
         display: block;
         width: 80%;
+        
         margin: 10px auto;
     }
 }

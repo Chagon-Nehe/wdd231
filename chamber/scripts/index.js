@@ -117,3 +117,10 @@ async function loadMemberSpotlights() {
 document.addEventListener('DOMContentLoaded', loadMemberSpotlights);
 
 
+//join and discover buttons functionality
+document.querySelector('.join-button').addEventListener('click', function() {
+    window.location.href = this.dataset.href;
+});
+document.querySelector('.discover-button').addEventListener('click', function() {
+    window.location.href = this.dataset.href;
+});
