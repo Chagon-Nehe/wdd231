@@ -34,7 +34,7 @@ function displayResults(data){
     mydescription.textContent = data.weather[0].description;
     mytemp.textContent = Math.round(data.main.temp) + "°C";
     myimage.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    myimage.setAttribute('SRC', myimage.src)
+    myimage.setAttribute('src', myimage.src)
     myimage.loading = "lazy"; // For better performance
     myimage.setAttribute('alt', data.weather[0].description);
 }    
