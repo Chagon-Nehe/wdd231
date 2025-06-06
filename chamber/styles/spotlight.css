@@ -73,7 +73,13 @@
     word-break: break-all; /* Helps with long URLs */
 }
 
-
+ h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--directory-header-text-color);
+    font-size: 1.4em;
+}
 
 .member-display:hover {
     color: var(--directory-item-hover-background);}
