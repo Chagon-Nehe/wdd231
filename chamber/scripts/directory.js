@@ -79,7 +79,7 @@ async function getMembers() {
 // Call the function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', getMembers);
 // Function to display members
-const gridbutton = document.querySelector("#grid");
+/*const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
@@ -96,7 +96,7 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
-}
+}*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');

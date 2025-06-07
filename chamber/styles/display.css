@@ -1,0 +1,87 @@
+/* --- List View Specific Styles (Table-like appearance using Grid) --- */
+#members-display.list-view {
+    grid-template-columns: 1fr; /* Single column for list view, each item is a "row" */
+    gap: 10px; /* Smaller gap between list items */
+    padding: 10px; /* Adjust padding for list view */
+}
+
+#members-display.list-view .member-card {
+    /* Each member card becomes a grid itself to define its "columns" */
+    display: grid;
+    /* Define columns: small fixed width for image, then flexible for info, then auto for contact */
+    grid-template-columns: 80px 1fr auto;
+    align-items: center; /* Vertically align content in the row */
+    text-align: left; /* Align text content to the left */
+    padding: 15px 25px;
+    gap: 20px; /* Space between the "columns" within the list item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for list items */
+    border: 1px solid #e2e8f0; /* Lighter border for cleaner list look */
+    transform: none; /* Remove hover transform for list items for a more static look */
+}
+
+#members-display.list-view .member-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow on hover */
+}
+
+#members-display.list-view .member-card img {
+    width: 60px; /* Smaller image in list view */
+    height: 60px;
+    margin-bottom: 0; /* Remove bottom margin */
+    border-width: 2px; /* Smaller border for image */
+}
+
+#members-display.list-view .member-card .info {
+    display: flex; /* Use flex to stack name and title */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically if space allows */
+}
+
+#members-display.list-view .member-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2px; /* Reduce margin */
+}
+
+#members-display.list-view .member-card p {
+    font-size: 0.85rem;
+    margin-bottom: 0; /* Remove margin */
+}
+
+#members-display.list-view .member-card .contact-info {
+    font-size: 0.8rem;
+    text-align: right; /* Align contact info to the rightmost column */
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Responsive adjustments for list view on smaller screens */
+@media (max-width: 768px) {
+    #members-display.list-view .member-card {
+        /* On smaller screens, stack contact info under primary info */
+        grid-template-columns: 60px 1fr; /* Image | (Name, Title, Phone, Email) */
+        gap: 15px;
+    }
+    #members-display.list-view .member-card .contact-info {
+        grid-column: 2 / 3; /* Make contact info appear in the second column */
+        text-align: left; /* Align left after stacking */
+    }
+}
+
+@media (max-width: 480px) {
+    #members-display.list-view .member-card {
+        /* For very small screens, stack all info vertically */
+        flex-direction: column; /* Revert to flex column for smallest screens */
+        display: flex; /* Back to flex layout for vertical stacking */
+        text-align: center;
+        gap: 10px;
+        padding: 15px;
+    }
+    #members-display.list-view .member-card img {
+        margin-bottom: 10px;
+    }
+    #members-display.list-view .member-card .info {
+        align-items: center; /* Center items for column layout */
+    }
+    #members-display.list-view .member-card .contact-info {
+        text-align: center; /* Center text */
+        grid-column: unset; /* Remove explicit grid column placement */
+    }
+}
