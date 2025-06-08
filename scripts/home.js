@@ -73,3 +73,15 @@
     if (lastModifiedSpan) {
       lastModifiedSpan.textContent = lastModifiedDate;
     }
+
+const modal = document.getElementById("course-details");
+const openModalBtn = document.querySelector(".flex-box");
+const closeModalBtn= document.querySelector("#close-dialog");
+
+openModalBtn.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.close();
+});

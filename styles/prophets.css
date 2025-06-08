@@ -12,7 +12,11 @@ h2 {
 	margin: 1rem 0;
 	text-shadow: 0 0 30px #111;
 }
-
+#cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 0.5rem;
+}
 .key {
 	position: absolute;
 	top: 5px;

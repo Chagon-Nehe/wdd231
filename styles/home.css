@@ -208,7 +208,44 @@ button{
     justify-content: center;
 }
 
-
+#dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    border: 1px solid rgb(0,0,0,10%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90px; 
+    max-width: 500px; /* Limit width for better readability */
+   
+}
+&::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+} 
+#dialog h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#dialog p{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#dialog button {
+    position: absolute;
+    background-color: #4299e1; /* Blue button */
+    top: 20px;
+    right: 20px;
+    border-radius: 0.5rem; 
+    padding: 0.75rem 1.5rem; /* Bigger buttons */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    
+}
 
 footer {
     display: flex;

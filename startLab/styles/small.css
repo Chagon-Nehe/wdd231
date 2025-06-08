@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}
+
+#openbtn{ background-color: bisque;}
+#openbtn:hover{ background-color: #f0e68c;}
+
+#closebtn{ background-color: #9dd2e2;}
+#closebtn:hover{ background-color: #ff6347;}
+
+#openbtn, #closebtn {
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#openbtn:hover, #closebtn:hover {
+    transform: scale(1.05);
+}
+#openbtn:active, #closebtn:active {
+    transform: scale(0.95);
+}
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+}
+#dialogBox{
+   
+    transform: translate(-50%, -50%); 
+    background-color: #bda0a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure dialog is above other content */
+}
