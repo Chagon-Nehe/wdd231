@@ -1,0 +1,284 @@
+:root{ /* Define your color variables https://coolors.co/050517-6a3127-cf5c36-df9261-efc88b-f2d69f-f4e3b2-d3d5d7*/
+    --directory-background: #cf5c36ff;
+    --directory-text-color: #6a3127ff;
+    --directory-link-color: #cf5c36ff;;
+    --directory-link-hover-color: #f2d69fff;
+    --directory-border-color: #dcd8d8;
+    --directory-header-background: #efc88bff;
+    --directory-header-text-color: #050517ff;
+    --directory-item-background: #d3d5d7ff;
+    --directory-item-hover-background:  #f4e3b2ff;;
+    --directory-item-active-background: #559b8c;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+#join-form {
+    background-color: var(--directory-item-background); /* Using new variable */
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjusted max-width */
+    margin: 2rem auto; /* Center the form */
+    border: 1px solid var(--directory-border-color); /* Using new variable */
+}
+
+#join-form h1 {
+    font-size: 2rem; /* Adjusted font size for form heading */
+    font-weight: 700;
+    color: var(--directory-text-color); /* Using new variable */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#join-form p {
+    font-size: 1rem;
+    color: var(--directory-text-color); /* Using new variable */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#join-form label {
+    display: block;
+    margin-bottom: 0.6rem; /* Slightly more space */
+    font-weight: 600; /* Bolder labels */
+    color: var(--directory-text-color); /* Using new variable */
+    font-size: 0.95rem;
+}
+#join-form input[type="text"],
+#join-form input[type="email"],
+#join-form input[type="tel"],
+#join-form textarea,
+#join-form select {
+    width: 100%;
+    padding: 0.8rem; /* Slightly more padding */
+    margin-bottom: 1.5rem; /* More space between fields */
+    border: 1px solid var(--directory-border-color); /* Using new variable */
+    border-radius: 0.5rem; /* More rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08); /* Stronger inset shadow */
+    font-size: 1rem;
+    color: var(--directory-text-color); /* Using new variable */
+    background-color: white; /* Ensure white background */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#join-form input[type="text"]:focus,
+#join-form input[type="email"]:focus,
+#join-form input[type="tel"]:focus,
+#join-form textarea:focus,
+#join-form select:focus {
+    outline: none;
+    border-color: var(--directory-link-color); /* Highlight border on focus */
+    box-shadow: 0 0 0 3px rgba(207, 92, 54, 0.2); /* Soft outline on focus */
+}
+
+#join-form textarea {
+    resize: vertical;
+    min-height: 100px; /* Increased min-height for textarea */
+}
+
+#other-business-type {
+    display: flex; /* Hidden by default */
+    margin-top: 0.5rem; /* Space above if shown */
+}
+
+#join-form button[type="submit"] {
+    background-color: var(--directory-link-color); /* Using new variable */
+    color: var(--directory-header-text-color); /* High contrast text for accessibility */
+    padding: 1rem 2rem; /* Larger button padding */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.15rem; /* Slightly larger font */
+    font-weight: 700; /* Bolder text */
+    display: block; /* Make button full width */
+    width: 100%; /* Full width */
+    margin-top: 2rem; /* More space above button */
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#join-form button[type="submit"]:hover {
+    background-color: var(--directory-link-hover-color); /* Using new variable */
+    color: var(--directory-header-text-color); /* High contrast text on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#form-group {
+    margin-bottom: 0; /* Managed by input/select margins */
+}
+/* Membership Levels Section Styling */
+#membership {
+    background-color: var(--directory-item-background);
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Wider for membership levels */
+    margin: 2rem auto;
+    border: 1px solid var(--directory-border-color);
+    text-align: center;
+}
+
+#membership h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--directory-text-color);
+    margin-bottom: 1rem;
+}
+
+#membership > p { /* Target the direct paragraph below h2 */
+    font-size: 1rem;
+    color: var(--directory-text-color);
+    margin-bottom: 2rem;
+}
+
+.membership-levels {
+    display: flex; /* Use grid for main layout of level boxes */
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.flex-box {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--directory-border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Important for hiding overflowing content */
+    position: relative;
+    display: flex; /* For internal stacking */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: alternate fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+}
+
+.flex-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    background-color: var(--directory-item-hover-background); /* Highlight background on hover */
+}
+
+.flex-box h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--directory-link-color); /* Use link color for level name */
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+.flex-box:hover h3 {
+    color: var(--directory-header-text-color); 
+}
+
+.flex-box .short-desc {
+    font-size: 0.9rem;
+    color: var(--directory-text-color);
+    margin-bottom: 0.5rem;
+    min-height: 36px; /* Ensure consistent height for short desc */
+    transition: opacity 0.3s ease;
+}
+
+.flex-box:hover .short-desc {
+    opacity: 0; /* Fade out short description on hover */
+}
+
+.flex-box .full-description {
+    position: absolute;
+    bottom: 1.25rem; /* Position above the bottom padding */
+    left: 1.25rem;
+    right: 1.25rem;
+    max-height: 0; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    overflow: hidden;
+    font-size: 0.85rem;
+    color: var(--directory-header-text-color); /* Dark text on hover background */
+    line-height: 1.4;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out 0.1s; /* Delay opacity a bit */
+    text-align: left; /* Align full description text left */
+}
+.flex-box .full-description p { /* Reset paragraph margins inside full-description */
+    margin-bottom: 0.5rem;
+    color: inherit; /* Inherit color from parent */
+}
+.flex-box .full-description p:last-child {
+    margin-bottom: 0;
+}
+
+.flex-box:hover .full-description {
+    max-height: 200px; /* Adjust based on content. Make it large enough */
+    opacity: 1;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .header-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .header-nav a {
+        padding: 0.75rem 1rem;
+    }
+    .search-filter-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .provider-card {
+        padding: 1rem;
+    }
+    .provider-card h2 {
+        font-size: 1.5rem;
+    }
+    .provider-card a.map-link,
+    .provider-card a.booking-link {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    .section-content {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    /* Mobile adjustments for list view */
+    #provider-list.list-view .provider-card {
+        flex-direction: column;
+        align-items: flex-start; /* Align text to left when stacked */
+        padding: 1rem;
+        padding-right: 1rem; /* Reset right padding */
+    }
+    #provider-list.list-view .provider-card > div:last-child {
+        position: static; /* Reset position */
+        transform: none;
+        flex-direction: row; /* Keep buttons horizontal on mobile */
+        width: 100%;
+        justify-content: space-around; /* Space out buttons */
+        margin-top: 1rem;
+    }
+    #provider-list.list-view .provider-card a.map-link,
+    #provider-list.list-view .provider-card a.booking-link {
+        width: auto; /* Allow buttons to size to content */
+        flex-grow: 1; /* Distribute space */
+        margin: 0 0.25rem; /* Small horizontal margin */
+        font-size: 0.9rem;
+    }
+    #join-form {
+        padding: 1.5rem;
+    }
+    #membership {
+        padding: 1.5rem;
+    }
+    .flex-box {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lilongwe Chambers of Commence">
+    <meta property="og:description"
+        content="A site that provide information about businesses, events,conferences and general information about Lilongwe the Capital city of Malawi">
+    <meta property="og:url" content=" https://chagon-nehe.github.io/wdd231/">
+    <meta property="og:image" content="images/Lilongwepic.webp">
+    <title>Lilongwe Chambers of Commence</title>
+    <meta name="description" content="Join page">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon1.ico" type="image/ico">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="Logo-box">
+            <img src="images/lcclogo.webp" alt="Logo" class="center">
+            <div class="logo-text">
+                <span>Lilongwe</span>
+                <p> Chambers of Commerce</p>
+            </div>
+
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="/chamber/index.html">Home</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+    </header>
+        <main>
+        <article class="grid">
+            <section>
+                <form method="GET"  action="thanks.html"    id="join-form">
+                    <h1>Join Lilongwe Chambers of Commerce</h1>
+                    <p>Fill out the form below to become a member.</p>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" autocomplete="on" required>
+                    
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" autocomplete="on" required >
+
+                    <label for="organization-title">Organization Title:</label>
+                    <input type="text" id="organization-title" name="organization-title"  pattern="[AB+C][_] []{7}" >
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"placeholder="eg.chawa@gmail.com" autocomplete="on" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="eg. +265(0)94567890" required>
+
+                    <label for="business-name">Business Name:</label>
+                    <input type="text" id="business-name" name="business-name" required>
+
+                    <label for="business-type">Business Type:</label>
+                    <select id="business-type" name="business-type">
+                        <option value="retail">Retail</option>
+                        <option value="service">Service</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="other">Other</option>
+                        <input type="text" id="other-business-type" name="other-business-type" placeholder="Please specify if other">
+                    </select>
+                    
+                    <label for ="membership-level">Membership Level:</label>
+                    <select id="membership-level" name="membership-level">
+                        <option value="np-membership">Non Profit(NP) Membership</option>
+                        <option value="bronze-membership">Bronze Membership</option>
+                        <option value="silver-membership">Silver Membership</option>
+                        <option value="gold-membership">Gold Membership</option>
+                    </select>
+                    <button type="submit">Join Now</button>
+
+                </form>
+            </section>
+
+            <section id="membership" class="description">
+                <h2>Membership Levels</h2>
+                <p>Choose the membership level that suits your business needs:</p>
+                <div class="membership-levels">
+                    <div class="flex-box"><strong>Non Profit(NP) Membership:</strong> For non-profit organizations.</div>
+                    <div class="flex-box"><strong>Bronze Membership:</strong> Basic membership with essential benefits.</div>
+                    <div class="flex-box"><strong>Silver Membership:</strong> Enhanced benefits for growing businesses.</div>
+                    <div class="flex-box"><strong>Gold Membership:</strong> Premium membership with exclusive perks.</div>
+                </div>
+            </section>
+        </article>
+        </main>
+    <footer>
+        <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce Malawi <img src="images/malawilog1.png"
+                alt="flag"></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+        <nav class="Sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://x.com">
+                <img src="images/x.png" alt="x"></a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="linkedin"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Lilongwe Chambers of Commence">
-    <meta property="og:description" content="A site that provide information about businesses, events,conferences and general information about Lilongwe the Capital city of Malawi">
+    <meta property="og:description"
+        content="A site that provide information about businesses, events,conferences and general information about Lilongwe the Capital city of Malawi">
     <meta property="og:url" content=" https://chagon-nehe.github.io/wdd231/">
-    <meta property="og:image" content="images/Lilongwepic.webp" >
+    <meta property="og:image" content="images/Lilongwepic.webp">
     <title>Lilongwe Chambers of Commence</title>
-    <meta name="description" content="Directory page">
+    <meta name="description" content=" Homepage">
     <meta name="author" content="Chawanangwa Gondwe">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/hero.css">
@@ -17,23 +19,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon1.ico" type="image/ico">
-    <script src="scripts/directory.js"  defer></script>
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/index.js" defer></script>
-    
+    <script src="scripts/join.js" defer></script>
+
 
 </head>
+
 <body>
     <header>
-       
+
         <div class="Logo-box">
-            <img src="images/lcclogo.webp" alt="Logo" class="center"> 
+            <img src="images/lcclogo.webp" alt="Logo" class="center">
             <div class="logo-text">
                 <span>Lilongwe</span>
-                <p> Chambers of Commerce</p>  
+                <p> Chambers of Commerce</p>
             </div>
-         
+
         </div>
-        
+
         <nav class="main-nav">
             <ul class="nav-list">
                 <li><a href="/chamber/index.html">Home</a></li>
@@ -47,66 +51,68 @@
             <span class="hamburger"></span>
             <span class="hamburger"></span>
         </button>
-        
+
     </header>
     <main>
         <article class="grid">
-        <section id="hero-container">
-            <div class="hero-content">
-                <h1>Welcome to Lilongwe Chambers of Commerce</h1>
-                <p>Your gateway to business opportunities in Malawi's capital city.</p>
-                <button data-href="/chamber/join.html" class="join-button">Join Now</button>
-                <button data-href="/chamber/discover.html" class="discover-button">Discover More</button>
-            </div>
-            <div class="hero-image">
-                <img src="images/lilongwelog.webp" alt="Lilongwe City"> 
-                
-            </div>
-        </section>
-        <h1>Home</h1>
-        <section id="weather">
-            <div class="grid-container">
-                <div class="grid-box">
-                    <h2>Events</h2>
-                    <p>Upcoming events in Lilongwe</p>
+            <section id="hero-container">
+                <div class="hero-content">
+                    <h1>Welcome to Lilongwe Chambers of Commerce</h1>
+                    <p>Your gateway to business opportunities in Malawi's capital city.</p>
+                    <button data-href="/chamber/join.html" class="join-button">Join Now</button>
+                    <button data-href="/chamber/discover.html" class="discover-button">Discover More</button>
                 </div>
-                <div class="grid-box">
-                      <h2>Current Weather</h2>
-                    <div class="card">
-                    <h3 id="city"></h3>
-                    <img id="icon" src="" alt="Weather Icon" />
-                    <p id="description"> </p>
-                    <p id="temperature"></p>
+                <div class="hero-image">
+                    <img src="images/lilongwelog.webp" alt="Lilongwe City">
+
+                </div>
+            </section>
+            <h1>Home</h1>
+            <section id="weather">
+                <div class="grid-container">
+                    <div class="grid-box">
+                        <h2>Events</h2>
+                        <p>Upcoming events in Lilongwe</p>
+                    </div>
+                    <div class="grid-box">
+                        <h2>Current Weather</h2>
+                        <div class="card">
+                            <h3 id="city"></h3>
+                            <img id="icon" src="" alt="Weather Icon" />
+                            <p id="description"> </p>
+                            <p id="temperature"></p>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <h2>Weather Forecast</h2>
+                        <div id="forecast-display"></div>
                     </div>
                 </div>
-                <div class="grid-box">
-                    <h2>Weather Forecast</h2>
-                    <div id="forecast-display"></div>
-                </div>
-            </div>
 
-        </section>
-        <h3 class= "highlights">Member Spotlights</h3>
-        <section id="spotlight-section">
-            <div id="spotlight-cards"></div>
-        </section>
-      
+            </section>
+            <h3 class="highlights">Member Spotlights</h3>
+            <section id="spotlight-section">
+                <div id="spotlight-cards"></div>
+            </section>
+
         </article>
     </main>
-    <script  src="scripts/weather.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <footer>
-        <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce    Malawi <img src="images/malawilog1.png" alt="flag"></p>
+        <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce Malawi <img src="images/malawilog1.png"
+                alt="flag"></p>
         <p>Last modified: <span id="last-modified"></span></p>
         <nav class="Sociallinks">
             <a href="https://facebook.com">
-                <img src="images/facebook.png"  alt="facebook"></a>
+                <img src="images/facebook.png" alt="facebook"></a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png"  alt="instagram"></a>
+                <img src="images/instagram.png" alt="instagram"></a>
             <a href="https://x.com">
-                <img src="images/x.png"  alt="x"></a>
+                <img src="images/x.png" alt="x"></a>
             <a href="https://linkedin.com">
-                <img src="images/linkedin.png"  alt="linkedin"></a>
+                <img src="images/linkedin.png" alt="linkedin"></a>
         </nav>
     </footer>
 </body>
+
 </html>
