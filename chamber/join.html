@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon1.ico" type="image/ico">
-    <script src="scripts/directory.js" defer></script>
+    <s9cript src="scripts/directory.js" defer></script>
     <script src="scripts/join.js" defer></script>
 
 
@@ -57,17 +57,17 @@
                 <form method="GET"  action="thanks.html"    id="join-form">
                     <h1>Join Lilongwe Chambers of Commerce</h1>
                     <p>Fill out the form below to become a member.</p>
-                    <label for="name">First Name:</label>
+                    <label for="firstname">First Name:</label>
                     <input type="text" id="firstname" name="firstname" autocomplete="on" required>
                     
-                    <label for="name">Last Name:</label>
+                    <label for="lastname">Last Name:</label>
                     <input type="text" id="lastname" name="lastname" autocomplete="on" required >
 
                     <label for="organization-title">Organization Title:</label>
-                    <input type="text" id="organization-title" name="organization-title"  pattern="[AB+C][_] []{7}" >
+                    <input type="text" id="organization-title" name="organization-title"  pattern="[ABCD][_] [0123]{7}" >
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"placeholder="eg.chawa@gmail.com" autocomplete="on" required>
+                    <input type="email" id="email" name="email" placeholder="eg.chawa@gmail.com" autocomplete="on" required>
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="eg. +265(0)94567890" required>
 
@@ -80,8 +80,8 @@
                         <option value="service">Service</option>
                         <option value="manufacturing">Manufacturing</option>
                         <option value="other">Other</option>
-                        <input type="text" id="other-business-type" name="other-business-type" placeholder="Please specify if other">
                     </select>
+                    <input type="text" id="other-business-type" name="other-business-type" placeholder="Please specify if other">
                     
                     <label for ="membership-level">Membership Level:</label>
                     <select id="membership-level" name="membership-level">
