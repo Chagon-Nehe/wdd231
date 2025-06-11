@@ -139,6 +139,30 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 1.5rem;
+    /* Initial state for the animation */
+    opacity: 0; /* Starts invisible */
+    transform: translateX(100%); /* Starts 100% of its own width to the right */
+
+    /* Apply the animation */
+    animation: slideInFadeIn 1s ease-out forwards;
+    /*
+      slideInFadeIn: Name of our @keyframes rule
+      1s: Duration of the animation
+      ease-out: Animation timing function (starts fast, ends slow)
+      forwards: Stays at the end state of the animation (important!)
+    */
+}
+
+/* Define the animation */
+@keyframes slideInFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); /* Start 100% to the right (off-screen) */
+    }
+    100% {
+        opacity: 1; /* Fade in to fully visible */
+        transform: translateX(0); /* Move to its original position */
+    }
 }
 
 .flex-box {
