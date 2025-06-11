@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon1.ico" type="image/ico">
-    <!--<script src="scripts/directory.js" defer></script>-->
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/join.js" defer></script>
 
 
@@ -64,7 +64,7 @@
                     <input type="text" id="lastname" name="lastname" autocomplete="on" required >
 
                     <label for="organization-title">Organization Title:</label>
-                    <input type="text" id="organization-title" name="organization-title"  pattern="[ABCD][_] [0123]{7}" >
+                    <input type="text" id="organization-title" name="organization-title"  pattern="^[A-Za-z]{7,}$" >
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="eg.chawa@gmail.com" autocomplete="on" required>
@@ -99,10 +99,10 @@
                 <h2>Membership Levels</h2>
                 <p>Choose the membership level that suits your business needs:</p>
                 <div class="membership-levels">
-                    <div class="flex-box"><strong>Non Profit(NP) Membership:</strong> For non-profit organizations.</div>
-                    <div class="flex-box"><strong>Bronze Membership:</strong> Basic membership with essential benefits.</div>
-                    <div class="flex-box"><strong>Silver Membership:</strong> Enhanced benefits for growing businesses.</div>
-                    <div class="flex-box"><strong>Gold Membership:</strong> Premium membership with exclusive perks.</div>
+                    <div class="flex-box1"><strong>Non Profit(NP) Membership:</strong> For non-profit organizations.</div>
+                    <div class="flex-box2"><strong>Bronze Membership:</strong> Basic membership with essential benefits.</div>
+                    <div class="flex-box3"><strong>Silver Membership:</strong> Enhanced benefits for growing businesses.</div>
+                    <div class="flex-box4"><strong>Gold Membership:</strong> Premium membership with exclusive perks.</div>
                 </div>
             </section>
         </article>

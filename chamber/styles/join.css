@@ -10,6 +10,16 @@
     --directory-item-hover-background:  #f4e3b2ff;;
     --directory-item-active-background: #559b8c;
 }
+body{
+    
+    font-family: 'times new romans', sans-serif; /* Default font family */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
 .grid{
     display: grid;
@@ -119,6 +129,7 @@
     margin: 2rem auto;
     border: 1px solid var(--directory-border-color);
     text-align: center;
+    height: fit-content;
 }
 
 #membership h2 {
@@ -144,7 +155,7 @@
     transform: translateX(100%); /* Starts 100% of its own width to the right */
 
     /* Apply the animation */
-    animation: slideInFadeIn 1s ease-out forwards;
+    animation: slideInFadeIn 2s ease-out forwards;
     /*
       slideInFadeIn: Name of our @keyframes rule
       1s: Duration of the animation
@@ -165,8 +176,8 @@
     }
 }
 
-.flex-box {
-    background-color: white;
+.flex-box1, .flex-box2, .flex-box3, .flex-box4 {
+    background-color: var(--directory-item-background); /* Use new variable */
     padding: 1.25rem;
     border-radius: 0.5rem;
     border: 1px solid var(--directory-border-color);
@@ -182,7 +193,7 @@
     animation: alternate fadeIn 0.5s ease-in-out; /* Add fade-in animation */
 }
 
-.flex-box:hover {
+.flex-box1:hover,.flex-box2:hover, .flex-box3:hover, .flex-box4:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     background-color: var(--directory-item-hover-background); /* Highlight background on hover */
