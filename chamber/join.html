@@ -20,6 +20,7 @@
     <link rel="icon" href="favicon1.ico" type="image/ico">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/join.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 
 
 </head>
@@ -98,14 +99,53 @@
             <section id="membership" class="description">
                 <h2>Membership Levels</h2>
                 <p>Choose the membership level that suits your business needs:</p>
+
                 <div class="membership-levels">
-                    <div class="flex-box1"><strong>Non Profit(NP) Membership:</strong> For non-profit organizations.</div>
-                    <div class="flex-box2"><strong>Bronze Membership:</strong> Basic membership with essential benefits.</div>
-                    <div class="flex-box3"><strong>Silver Membership:</strong> Enhanced benefits for growing businesses.</div>
-                    <div class="flex-box4"><strong>Gold Membership:</strong> Premium membership with exclusive perks.</div>
+
+                    <!-- Non Profit (NP) Membership -->
+                    <div class="flex-box np-membership"
+                        data-title="Non Profit (NP) Membership"
+                        data-description="This membership is specifically designed for non-profit organizations, offering tailored benefits to support their community initiatives and operational needs. It includes access to basic resources, networking opportunities, and discounted rates on relevant workshops.">
+                        <strong>Non Profit (NP) Membership:</strong>
+                        <span>For non-profit organizations.</span>
+                    </div>
+
+                    <!-- Bronze Membership -->
+                    <div class="flex-box bronze-membership"
+                        data-title="Bronze Membership"
+                        data-description="The Bronze Membership provides essential benefits for startups and small businesses looking to get started. It includes access to our online resource library, monthly newsletters, and invitations to exclusive introductory events.">
+                        <strong>Bronze Membership:</strong>
+                        <span>Basic membership with essential benefits.</span>
+                    </div>
+
+                    <!-- Silver Membership -->
+                    <div class="flex-box silver-membership"
+                        data-title="Silver Membership"
+                        data-description="Our Silver Membership is ideal for growing businesses, offering enhanced benefits such as priority access to networking events, discounted marketing services, and dedicated support from our membership team. This level helps businesses scale effectively.">
+                        <strong>Silver Membership:</strong>
+                        <span>Enhanced benefits for growing businesses.</span>
+                    </div>
+
+                    <!-- Gold Membership -->
+                    <div class="flex-box gold-membership"
+                        data-title="Gold Membership"
+                        data-description="The Gold Membership is our premium offering, designed for established businesses seeking exclusive perks. It includes all Silver benefits plus VIP access to all events, personalized business consultations, premium listing in our directory, and advanced analytical reports.">
+                        <strong>Gold Membership:</strong>
+                        <span>Premium membership with exclusive perks.</span>
+                    </div>
+                </div>
+
+                <!-- Modal Structure -->
+                <div id="membershipModal" class="modal-overlay">
+                    <div class="modal-content">
+                        <button id="closeModal" class="close-button">&times;</button>
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                    </div>
                 </div>
             </section>
         </article>
+        
         </main>
     <footer>
         <p>&copy;<span id="copyright-year"></span> Lilongwe Chambers of Commerce Malawi <img src="images/malawilog1.png"

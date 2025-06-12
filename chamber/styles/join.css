@@ -17,7 +17,7 @@ body{
     padding: 0;
     justify-content: center;
     align-items: center;
-    
+
     
 }
 
@@ -135,13 +135,13 @@ body{
 #membership h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--directory-text-color);
+    color: var(--directory-header-color);
     margin-bottom: 1rem;
 }
 
 #membership > p { /* Target the direct paragraph below h2 */
     font-size: 1rem;
-    color: var(--directory-text-color);
+    color: var(--directory-header-color);
     margin-bottom: 2rem;
 }
 
@@ -168,37 +168,156 @@ body{
 @keyframes slideInFadeIn {
     0% {
         opacity: 0;
+        background-color: var(--directory-item-active-background);
         transform: translateX(100%); /* Start 100% to the right (off-screen) */
     }
     100% {
         opacity: 1; /* Fade in to fully visible */
+        background-color: var(--directory-item-hover-background); /* Change to the normal background */
         transform: translateX(0); /* Move to its original position */
     }
 }
+.description {
+    background-color: #fff; /* White background for the section */
+    padding: 30px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 900px; /* Limit the section width */
+    width: 100%;
+    text-align: center;
+}
 
-.flex-box1, .flex-box2, .flex-box3, .flex-box4 {
-    background-color: var(--directory-item-background); /* Use new variable */
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--directory-border-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+.description h2 {
+    font-size: 2.5em; /* Larger heading */
+    color: #333; /* Dark gray color */
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Flex container for membership levels */
+.membership-levels {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between flex boxes */
+    justify-content: center; /* Center the boxes when they wrap */
+}
+
+/* Styling for each individual flex-box */
+.flex-box {
+    background-color: #007bff; /* Default blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Small shadow */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effects */
+    flex: 1 1 200px; /* Allow boxes to grow, shrink, and have a base width */
+    min-width: 200px; /* Minimum width for each box */
+}
+
+.flex-box:hover {
+    transform: translateY(-5px); /* Lift slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.flex-box strong {
+    display: block; /* Make the strong text a block element for spacing */
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+/* Specific background colors for each flex-box for variety */
+.flex-box.np-membership {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Blue gradient */
+}
+.flex-box.bronze-membership {
+    background: linear-gradient(to right, #ffc107, #e0a800); /* Yellow/Orange gradient */
+}
+.flex-box.silver-membership {
+    background: linear-gradient(to right, #6c757d, #5a6268); /* Gray gradient */
+}
+.flex-box.gold-membership {
+    background: linear-gradient(to right, #fd7e14, #d35400); /* Orange/Gold gradient */
+}
+
+
+/* Modal styling */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    z-index: 1000; /* High z-index to be on top */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for modal content */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for modal */
+    max-width: 500px; /* Max width for the modal */
+    width: 90%; /* Responsive width */
+    position: relative; /* For positioning the close button */
+    animation: fadeIn 0.3s ease-out; /* Simple fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-content h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6; /* Better readability for long text */
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em; /* Large X for close button */
+    font-weight: bold;
+    color: #aaa; /* Lighter color */
     cursor: pointer;
-    overflow: hidden; /* Important for hiding overflowing content */
-    position: relative;
-    display: flex; /* For internal stacking */
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    animation: alternate fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+    border: none;
+    background: none;
+    padding: 0;
+    line-height: 1; /* Adjust line height to prevent extra space */
+    transition: color 0.2s ease-in-out;
 }
 
-.flex-box1:hover,.flex-box2:hover, .flex-box3:hover, .flex-box4:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    background-color: var(--directory-item-hover-background); /* Highlight background on hover */
+.close-button:hover {
+    color: #666; /* Darker on hover */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .membership-levels {
+        flex-direction: column; /* Stack flex boxes vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+    }
+    .flex-box {
+        width: 90%; /* Take more width on small screens */
+        max-width: 300px; /* Prevent from becoming too wide */
+    }
+}
 .flex-box h3 {
     font-size: 1.25rem;
     font-weight: 600;
