@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Lilongwe Wildlife Centre",
+    "address": "Sanctuary Road, Lilongwe",
+    "description": "Malawi's only wildlife sanctuary, rescuing and rehabilitating wild animals, promoting conservation and environmental education.",
+    "image": "images/wildlife-center.webp"
+  },
+  {
+    "name": "Old Town Market (Lilongwe)",
+    "address": "Bunda Road, Lilongwe",
+    "description": "A bustling hub of local commerce, offering fresh produce, crafts, and a vibrant cultural experience.",
+    "image": "images/city-market.webp"
+  },
+  {
+    "name": "Kamuzu Palace",
+    "address": "Presidential Way, Lilongwe",
+    "description": "The official residence of the President of Malawi, an impressive architectural landmark.",
+    "image": "images/kamuzu-palace.webp"
+  },
+  {
+    "name": "Lake Malawi National Park",
+    "address": "Cape Maclear, Southern Region",
+    "description": "A UNESCO World Heritage site known for its unique cichlid fish, clear waters, and stunning sunsets.",
+    "image": "images/lake-malawi.webp"
+  },
+  {
+    "name": "Liwonde National Park",
+    "address": "Liwonde, Southern Region",
+    "description": "Malawi's premier wildlife viewing destination, home to elephants, rhinos, lions, and diverse birdlife.",
+    "image": "images/national-park.webp"
+  },
+  {
+    "name": "Chilobwe Cultural Village",
+    "address": "Chilobwe, Blantyre",
+    "description": "Experience traditional Malawian village life, crafts, music, and dance demonstrations.",
+    "image": "images/cultural-village.webp"
+  },
+  {
+    "name": "Kumbali Cultural Village",
+    "address": "Area 44, Lilongwe",
+    "description": "A rural lodge offering insights into Malawian culture, traditional dances, and farming practices.",
+    "image": "images/kumbali-cultural-village.webp"
+  },
+  {
+    "name": "Nkhotakota Wildlife Reserve",
+    "address": "Nkhotakota, Central Region",
+    "description": "Malawi's oldest and largest wildlife reserve, recently restocked with diverse animal species.",
+    "image": "images/nkhotakota-reserve.webp"
+  }
+]

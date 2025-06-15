@@ -1,0 +1,140 @@
+/* --- discover.html specific styles --- */
+
+.discover-main {
+    padding: 1rem;
+    max-width: 1200px; /* Max width for your main content */
+    margin: 0 auto;
+}
+
+.discover-grid {
+    display: grid;
+    grid-gap: 20px; /* Space between cards */
+    padding: 1rem;
+    background-color: #f0f0f0; /* Just for visualization */
+    border-radius: 8px;
+}
+
+/* Small Screens (320px - 640px): Single Column */
+.discover-grid {
+    grid-template-columns: 1fr; /* One column for small screens */
+    /* Define grid areas for each card for small screens */
+    grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5"
+        "card-6"
+        "card-7"
+        "card-8";
+}
+
+/* Assign grid areas to each dynamically created card ID */
+#card-1 { grid-area: card-1; }
+#card-2 { grid-area: card-2; }
+#card-3 { grid-area: card-3; }
+#card-4 { grid-area: card-4; }
+#card-5 { grid-area: card-5; }
+#card-6 { grid-area: card-6; }
+#card-7 { grid-area: card-7; }
+#card-8 { grid-area: card-8; }
+
+.place-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.place-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.place-card figure {
+    margin: 0; /* Remove default margin */
+}
+
+.place-card img {
+    max-width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    width: 300px; /* Fixed width, though max-width: 100% will adapt */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.place-card address {
+    font-style: normal; /* Override default italic address style */
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.place-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the new sidebar info area */
+#sidebar-info {
+    background-color: #e9f7ef; /* Light green background */
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #155724; /* Dark green text */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.place-card img {
+    max-width: 100%;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    /* Add a transition for smooth effects */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Medium Screens (641px - 1024px): Two Columns  */
+.discover-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-areas:
+        "card-1 card-2"
+        "card-3 card-4"
+        "card-5 card-6"
+        "card-7 card-8";
+}
+
+/*Image Hover Effect for Non-Mobile Views */
+@media (min-width: 641px) {
+    .place-card img:hover {
+        filter: grayscale(100%) brightness(80%); /* Example effect: grayscale and slightly darker */
+        transform: scale(1.02); /* Example effect: slightly enlarge */
+        cursor: pointer; /* Indicate interactivity */
+    }
+}
