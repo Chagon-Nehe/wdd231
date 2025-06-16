@@ -1,0 +1,127 @@
+/* General Body Styles */
+body {
+    font-family: "Open Sans", sans-serif; /* Body font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Neutral background color */
+    color: #343a40; /* Neutral text color */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif; /* Heading font */
+    color: #007bff; /* Primary accent color for main headings */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #08a745; /* Secondary accent color for section dividers */
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #343a40; /* Neutral text color for sub-headings */
+}
+
+/* Header and Footer */
+header {
+    background-color: #007bff; /* Primary accent color */
+    color: white;
+    padding: 1.5em 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: white; /* Ensure heading is white on blue background */
+    margin: 0;
+}
+
+footer {
+    background-color: #343a40; /* Neutral text color for footer background */
+    color: #f8f9fa; /* Off-white text on dark background */
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+    font-size: 0.9em;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    
+    margin: 0.5em;
+}
+
+/* Color Schema Examples */
+.color-box {
+    display:inline-block;
+    width: 15px;
+    height:15px;
+    
+    border: 1px solid #ccc;
+    vertical-align:middle;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.primary-color { background-color: #007bff; }
+.secondary-color { background-color: #08a745; }
+.neutral-bg-color { background-color: #f8f9fa; }
+.neutral-text-color { background-color: #343a40; }
+
+
+/* Typography Examples */
+.font-example {
+    font-weight: bold;
+}
+
+.heading-font {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+}
+
+.body-font {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+}
+
+/* Wireframe Sketches */
+.wireframe-sketch {
+    background-color: #f4f4f4;
+    border: 1px dashed #ccc;
+    padding: 1em;
+    white-space: pre-wrap; /* Preserve whitespace and wrap */
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #555;
+    margin: 1em 0;
+    overflow-x: auto; /* For narrower screens */
+}

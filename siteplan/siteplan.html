@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthcareConnect: Site Plan</title>
+    <meta name="description" content="Site plan for the HealthcareConnect web application.">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <h1>HealthcareConnect: Individual Project Site Plan</h1>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This document outlines the plan for "HealthcareConnect," a front-end web application designed to serve as a directory of local healthcare providers and clinics. This site plan acts as a blueprint for the design and development phases, detailing the core components, purpose, and visual considerations for the project.</p>
+        </section>
+
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <h3>HealthcareConnect</h3>
+            <p>This name was selected to clearly communicate the primary function of the website: connecting users with healthcare services. It implies accessibility and ease of use, aligning with the project's goal to simplify finding medical professionals. It's concise, memorable, and directly relevant to the healthcare sector.</p>
+            <p><em>Optional domain availability:</em> healthcareconnect.org (or .info, .health, etc.)</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>"HealthcareConnect" aims to provide a consolidated, easily searchable resource to make it easier and faster to find and connect with local doctors and hospitals.  The site will feature a browsable directory of medical experts and facilities, with each listing offering key information such as name, specialty, address, contact, hours, and a description of services. </p>
+            <p>The core services and information provided will include:</p>
+            <ul>
+                <li>A browsable directory of local healthcare providers and clinics. </li>
+                <li>Key information for each provider/clinic: Name, Specialty(s), Full Address, Contact Phone Number, Clinic Hours / Availability, a concise description of services offered. </li>
+                <li>A clickable link to a static map (e.g., Google Maps link) for easy navigation. </li>
+                <li>Users can sort listings by popular medical disciplines (e.g., "General Practice", "Pediatrics"). </li>
+                <li>Location-based search functionality to filter results by city, town, or neighborhood. </li>
+                <li>A "Book Appointment" button on each listing. </li>
+                <li>Dynamic data rendering of provider information loaded from a JSON file. </li>
+            </ul>
+            <p>The project intends to improve accessibility to care, empower informed choices by providing essential information upfront, and support local healthcare ecosystems by giving a platform for providers to be found. </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>Here are some questions a site visitor (representing the target audience) might ask:</p>
+            <ol>
+                <li>"I've just moved to Blantyre and need to find a reputable pediatrician for my child. How can I quickly find one with good reviews and convenient hours?"</li>
+                <li>"My tooth has been bothering me for days, and I need to find a dentist that offers emergency appointments this afternoon. Can I filter by availability?"</li>
+                <li>"I'm looking for a physiotherapist near my workplace in Limbe. Can I search by location and see their contact details?"</li>
+                <li>"What services does the 'ABC Clinic' offer, and what are their typical operating hours?"</li>
+            </ol>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The chosen color schema aims for a professional, clean, and trustworthy look, suitable for a healthcare directory. This site plan document will exclusively use these colors.</p>
+            <ul>
+                <li><strong>Primary Accent/Action Color:</strong>  <span class="color-box primary-color">#007bff </span> <!--(A vibrant blue)-->
+                    <br><em>Usage:</em> "Book Appointment" buttons, interactive elements (links, hover states), important headings, navigation active states. Represents trust and action.</li>
+                <li><strong>Secondary Accent/Text Color:</strong> <span class="color-box secondary-color">#28a745</span> <!--(A calming green)-->
+                    <br><em>Usage:</em> Sub-headings, success messages, potentially footer background or subtle accents. Represents health and growth.</li>
+                <li><strong>Neutral Background/Text Color:</strong> <span class="color-box neutral-bg-color">#f8f9fa <!--(Off-white)--></span>     <span class="color-box neutral-text-color">#343a40 <!--(Dark grey)--></span>
+                    <br><em>Usage:</em> Off-white for general background of cards and main content areas for readability. Dark grey for body text and general headings for contrast and professionalism.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>A maximum of two fonts will be selected to maintain consistency and optimize load times, ensuring clarity and readability across all devices.</p>
+            <ul>
+                <li><strong>Headings (H1, H2, H3):</strong> <span class="font-example heading-font">"Montserrat"</span> (sans-serif)
+                    <br><em>Reason:</em> Modern, clean, and legible, providing a professional feel for titles and prominent text.</li>
+                <li><strong>Body Text (Paragraphs, List Items, Labels):</strong> <span class="font-example body-font">"Open Sans"</span> (sans-serif)
+                    <br><em>Reason:</em> Highly readable across various screen sizes, versatile, and commonly used for web content. It pairs well with Montserrat.</li>
+            </ul>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe (Home Page Layout)</h2>
+            <p>Below are conceptual sketches for the home page layout in mobile and desktop views, demonstrating the placement of key elements. Actual content will be dynamically loaded in the directory section.</p>
+
+            <h3>Mobile View Sketch (approx. 375px width)</h3>
+            <pre class="wireframe-sketch">
++---------------------------------+
+| HEADER                          |
+| (Logo/Site Name)                |
+| (Hamburger Menu Icon)           |
++---------------------------------+
+| NAVIGATION (Expanded on click)  |
+| - Home                          |
+| - Discover (Current Page)       |
+| - Other Links                   |
++---------------------------------+
+| HERO SECTION / CALL TO ACTION   |
+| (Search Bar for Providers)      |
+| (Short tagline/intro)           |
++---------------------------------+
+| FEATURED CATEGORIES             |
+| (e.g., General Practice, Pediat)|
+| (Icons/small cards)             |
++---------------------------------+
+| INTRO TEXT / ABOUT US           |
+| (Brief description of site)     |
+| (Why HealthcareConnect helps)    |
++---------------------------------+
+| CTA - FIND A PROVIDER           |
+| (Large button)                  |
++---------------------------------+
+| NEWS/ANNOUNCEMENTS (Optional)   |
+| (Simple list/feed)              |
++---------------------------------+
+| FOOTER                          |
+| (Contact Info, Social Links)    |
+| (Copyright)                     |
++---------------------------------+
+            </pre>
+
+            <h3>Desktop View Sketch (approx. 1200px width)</h3>
+            <pre class="wireframe-sketch">
++--------------------------------------------------------------------------------+
+| HEADER                                                                         |
+| (Logo/Site Name)                                  NAVIGATION (Inline)          |
+|                                                     Home | Discover | Other Links |
++--------------------------------------------------------------------------------+
+| HERO SECTION                                                                   |
+| (Large Search Bar for Providers)                                               |
+| (Prominent Tagline: "Connecting You to Local Healthcare")                      |
++--------------------------------------------------------------------------------+
+| MAIN CONTENT AREA (Grid/Flexbox Layout)                                        |
+| +---------------------+ +---------------------+ +---------------------+        |
+| | FEATURED CATEGORIES | | ABOUT HEALTHCARECONN. | | NEWS/ANNOUNCEMENTS  |        |
+| | (Icons/Cards)       | | (Detailed overview)   | | (Recent updates)    |        |
+| +---------------------+ +---------------------+ +---------------------+        |
+| +-----------------------------------------------------------------------------+  |
+| | CALL TO ACTION / TESTIMONIALS (Optional)                                    |  |
+| | (e.g., "Hear from our users")                                               |  |
+| +-----------------------------------------------------------------------------+  |
++--------------------------------------------------------------------------------+
+| FOOTER                                                                         |
+| (Multi-column: Contact Info | Quick Links | Social Media | Copyright)         |
++--------------------------------------------------------------------------------+
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HealthcareConnect. All rights reserved.</p>
+        <p>Site Plan Document</p>
+    </footer>
+</body>
+</html>
