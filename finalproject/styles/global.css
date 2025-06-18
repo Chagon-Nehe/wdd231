@@ -1,0 +1,213 @@
+/*
+    css/global.css
+    Contains styles that apply across all pages of the CareConnect website.
+    This includes basic typography, layout for common elements like header/footer,
+    and styles for the modal dialog.
+*/
+
+/* Basic styles for the whole page */
+:root {
+    --primary-color: #007bff; /* Dark blue for primary elements */
+    --secondary-color: #4a5568; /* Gray for secondary elements */
+    --accent-color: #28a745; /* Green for buttons and highlights */
+    --text-color: #333; /* Dark gray for text */
+    --background-color: #f0f2f5; /* Light gray background */
+}
+body {
+    font-family: 'Inter', sans-serif; /* Apply our chosen font */
+    background-color: #f0f2f5; /* A very light gray for the background */
+    color: #333; /* Dark gray for general text, good readability */
+    min-height: 100vh; /* Make sure the body takes at least the full viewport height */
+    display: flex; /* Use Flexbox to help position the footer at the bottom */
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    margin: 0; /* Remove default margin around the page */
+    padding: 0; /* Remove default padding */
+}
+.logo-box{
+    display: flex; /* Use Flexbox to align items in the header */
+    flex-direction:row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Center items vertically */
+    gap: 1rem; /* Space between logo and text */
+}
+header img{
+    width: 9rem; /* Set a fixed width for the logo */
+    height: 9rem;
+    border-radius: 1rem;
+   
+    
+}
+/* Container to keep content from stretching too wide on large screens */
+.container {
+    max-width: 1200px; /* Maximum width for the main content area */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 1.5rem; /* Add some space around the content inside the container */
+    box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+/* Styles for the website header */
+header {
+    background-color: var(--primary-color); /* A dark blue color for the header background */
+    color: white; /* White text on the dark blue background */
+    padding: 1.5rem 0; /* Vertical padding (top/bottom), no horizontal padding here */
+    text-align: center; /* Center align text inside the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for a lifted effect */
+}
+
+/* Styles for the main heading (e.g., "CareConnect") */
+header h1 {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 700; /* Bold font thickness */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+/* Styles for the navigation links in the header */
+.header-nav {
+    display: flex;/* Use Flexbox to arrange navigation links horizontally */
+    
+    justify-content:center; /* Center the navigation links */
+    gap: 2.5rem; /* Add space between each navigation item */
+    margin-top: 1rem; /* Space above the navigation links */
+    align-items: flex-end;
+}
+
+.header-nav a {
+    color: white; /* White text for navigation links */
+    text-decoration: none; /* Remove the default underline from links */
+    font-weight: 500; /* Medium font thickness */
+    padding: 0.5rem 1rem; /* Padding around the link text, making them easier to click */
+    border-radius: 0.375rem; /* Slightly rounded corners for the link buttons */
+    transition: background-color 0.2s ease; /* Smooth transition for background color on hover */
+}
+
+.header-nav a:hover,
+.header-nav a.active-nav {
+    background-color: #4a5568; /* A slightly different gray for when you hover or the link is active */
+}
+
+/* Common styles for content sections */
+.content-section {
+    background-color: white; /* White background for sections */
+    padding: 2rem; /* Padding inside each section */
+    border-radius: 0.75rem; /* Rounded corners for the sections */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* A larger shadow for sections */
+    margin-top: 2rem; /* Space above each section */
+    margin-bottom: 2rem; /* Space below each section */
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+    text-align: center;
+}
+
+/* Styles for the website footer */
+footer {
+    background-color: #2d3748; /* Dark gray for footer background */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the very bottom, thanks to body's flexbox */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05); /* Shadow above footer */
+}
+
+/* Last visit message style */
+.last-visit-message {
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+/* --- Modal Dialog Styles --- */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place even when scrolling */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex; /* Use flex to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Auto margin for older browsers, flex handles centering */
+    padding: 2.5rem;
+    border: 1px solid #888;
+    width: 80%; /* Could be responsive, e.g., 80% width */
+    max-width: 500px; /* Max width for larger screens */
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative; /* For close button positioning */
+    animation: fadeIn 0.3s ease-out; /* Simple fade-in animation */
+}
+
+.modal-content h3 {
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.modal-close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Simple Fade-in Animation for Modal */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .header-nav {
+        flex-direction: column; /* Stack navigation links vertically on mobile */
+        gap: 0.5rem;
+    }
+    .header-nav a {
+        padding: 0.75rem 1rem;
+    }
+    .content-section {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
+footer  img {
+    
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}

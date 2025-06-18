@@ -1,0 +1,101 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+}
+.confirmation-card {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+.confirmation-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c5282;
+    margin-bottom: 1.5rem;
+}
+.confirmation-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px dashed #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+.confirmation-card p {
+    font-size: 1.1rem;
+    color: #636b7d;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+.confirmation-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+}
+.confirmation-card ul li {
+    background-color: white;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    border-left: 4px solid #4299e1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+.confirmation-card ul li strong {
+    color: #2d3748;
+    margin-right: 0.5rem;
+}
+.confirmation-card ul li:last-child {
+    margin-bottom: 0;
+}
+.back-button {
+    background-color: #4299e1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    margin-top: 2rem;
+}
+.back-button:hover {
+    background-color: #3182ce;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .confirmation-card {
+        padding: 1.5rem;
+    }
+    .confirmation-card h1 {
+        font-size: 1.8rem;
+    }
+    .confirmation-card h2 {
+        font-size: 1.3rem;
+    }
+    .confirmation-card p {
+        font-size: 1rem;
+    }
+}

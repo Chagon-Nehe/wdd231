@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthcareConnect: Join Us</title>
+    <meta property="og:title" content="HealthcareConnect">
+    <meta property="og:description" content="A site that provide information about hospitals, clinics and healthcare providers in Malawi. ">
+    <meta property="og:url" content=" https://chagon-nehe.github.io/wdd231/finalproject/index.html">
+    <meta property="og:image" content="images/healthcareconnectlogo.webp" >
+    <meta name="description" content="Join the HealthcareConnect directory for healthcare providers and clinics.">
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main CSS for global styles (header, footer, basic typography) -->
+    <link rel="stylesheet" href="styles/global.css">
+    <!-- Specific CSS for the join page (form styling) -->
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <div class="logo-box">
+                <img src="images/healthcareconnectlogo.webp" alt="Logo" class="center" 
+            ><span>
+                <h1>HealthcareConnect</h1><h3>Your Local Healthcare Provider Directory</h3>  
+            </span> 
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="directory.html" class="nav-link">Directory</a>
+                <a href="join.html" class="nav-link active-nav">Join Us</a>
+            </nav>
+            <!--<button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>-->
+            <!-- Placeholder for last visit message -->
+            <p id="last-visit-display" class="last-visit-message"></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Join Us Section Content -->
+        <section id="join-section" class="content-section">
+            <h2>Join Our Directory</h2>
+            <p class="text-center">Are you a healthcare provider or clinic? Join HealthcareConnect to increase your visibility and connect with more patients in your local community.</p>
+            <form id="join-form" class="join-form" action="form-action.html" method="GET">
+                <div class="form-group">
+                    <label for="provider-name">Provider/Clinic Name:</label>
+                    <input type="text" id="provider-name" name="name" required autocomplete="on" placeholder="e.g., Dr. Jane Doe / City Health Clinic">
+                </div>
+                <div class="form-group">
+                    <label for="provider-specialty">Specialty:</label>
+                    <input type="text" id="provider-specialty" name="specialty" required autocomplete="on" placeholder="e.g., General Practice, Dentistry">
+                </div>
+                <div class="form-group">
+                    <label for="provider-address">Full Address:</label>
+                    <input type="text" id="provider-address" name="address" required autocomplete="on" placeholder="e.g., 123 Clinic St, Town, Country">
+                </div>
+                <div class="form-group">
+                    <label for="provider-phone">Contact Phone Number:</label>
+                    <input type="tel" id="provider-phone" name="phone" required autocomplete="on" placeholder="e.g., +265 11 2233 445">
+                </div>
+                <div class="form-group">
+                    <label for="provider-hours">Clinic Hours / Availability:</label>
+                    <input type="text" id="provider-hours" name="hours" placeholder="e.g., Mon-Fri: 9:00 AM - 5:00 PM" autocomplete="on" required>
+                </div>
+                <div class="form-group">
+                    <label for="provider-description">Services Description:</label>
+                    <textarea id="provider-description" name="description" rows="4" placeholder="Briefly describe your services..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="provider-maplink">Google Maps Link (Optional):</label>
+                    <input type="text" id="provider-maplink" name="maplink" placeholder="e.g., https://goo.gl/maps/...">
+                </div>
+                <div class="form-group">
+                    <label for="provider-bookinglink">Booking Link/Email:</label>
+                    <input type="text" id="provider-bookinglink" name="bookinglink" placeholder="e.g., mailto:info@clinic.com / https://clinic.com/book">
+                </div>
+                <button type="submit">Join Now</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HealthcareConnect. All rights reserved.</p>
+        </div>
+        <nav class="Sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://x.com">
+                <img src="images/x.png" alt="x"></a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="linkedin"></a>
+        </nav>
+    </footer>
+    <!-- --- Modal Dialog Structure --- -->
+    <div id="thankYouModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <h3>Thank You!</h3>
+            <p id="modalMessage">Your submission has been received. We appreciate your interest in joining CareConnect!</p>
+            <button class="cta-button" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/join.js" defer></script>  
+</body>
+</html>

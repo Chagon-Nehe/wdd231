@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Alice Johnson",
+    "specialty": "General Practice",
+    "address": "123 Main St, Central City",
+    "phone": "+265 11 2233 445",
+    "hours": "Mon-Fri: 8:00 AM - 5:00 PM",
+    "description": "Experienced family physician offering comprehensive primary care for all ages, focusing on preventive health and patient education.",
+    "mapLink": "https://www.google.com/maps/search/123+Main+St,+Central+City",
+    "bookingLink": "mailto:alice.johnson@careconnect.com?subject=Appointment Inquiry"
+  },
+  {
+    "id": 2,
+    "name": "Greenleaf Dental Clinic",
+    "specialty": "Dentistry",
+    "address": "45 Oak Ave, North Town",
+    "phone": "+265 22 3344 556",
+    "hours": "Mon-Sat: 9:00 AM - 6:00 PM",
+    "description": "Modern dental clinic providing general, cosmetic, and emergency dental services with a gentle approach. We prioritize your comfort and oral health.",
+    "mapLink": "https://www.google.com/maps/search/45+Oak+Ave,+North+Town",
+    "bookingLink": "https://www.greenleafdental.com/book"
+  },
+  {
+    "id": 3,
+    "name": "Healthy Steps Physiotherapy",
+    "specialty": "Physiotherapy",
+    "address": "789 Pine Ln, Westside",
+    "phone": "+265 33 4455 667",
+    "hours": "Mon-Fri: 9:00 AM - 7:00 PM",
+    "description": "Specializing in sports injuries, post-operative rehabilitation, and chronic pain management. Personalized treatment plans to get you moving again.",
+    "mapLink": "https://www.google.com/maps/search/789+Pine+Ln,+Westside",
+    "bookingLink": "mailto:info@healthysteps.com?subject=Physio Appointment"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ben Carter",
+    "specialty": "Pediatrics",
+    "address": "10 Downing St, Central City",
+    "phone": "+265 44 5566 778",
+    "hours": "Mon-Fri: 9:00 AM - 5:00 PM",
+    "description": "Caring pediatrician focused on children's health from infancy to adolescence. Providing compassionate care for your little ones.",
+    "mapLink": "https://www.google.com/maps/search/10+Downing+St,+Central+City",
+    "bookingLink": "mailto:ben.carter@careconnect.com?subject=Pediatric Appointment"
+  },
+  {
+    "id": 5,
+    "name": "City Medical Center",
+    "specialty": "General Practice",
+    "address": "20 Elm St, Eastside",
+    "phone": "+265 55 6677 889",
+    "hours": "24/7 Emergency, Mon-Sat: 8:00 AM - 8:00 PM appointments",
+    "description": "Comprehensive medical center offering urgent care, family medicine, and specialized clinics. Your health is our priority.",
+    "mapLink": "https://www.google.com/maps/search/20+Elm+St,+Eastside",
+    "bookingLink": "https://www.citymedicalcenter.org/schedule"
+  },
+  {
+    "id": 6,
+    "name": "Orthopedic & Sports Clinic",
+    "specialty": "Physiotherapy",
+    "address": "30 Cedar Rd, South Hills",
+    "phone": "+265 66 7788 990",
+    "hours": "Mon-Fri: 8:30 AM - 6:30 PM",
+    "description": "Leading clinic for orthopedic rehabilitation and sports medicine, helping athletes and individuals recover and perform at their best.",
+    "mapLink": "https://www.google.com/maps/search/30+Cedar+Rd,+South+Hills",
+    "bookingLink": "mailto:sportsclinic@careconnect.com?subject=Physio Appointment"
+  },
+  {
+    "id": 7,
+    "name": "Sunrise Dental Care",
+    "specialty": "Dentistry",
+    "address": "55 Pine St, Riverdale",
+    "phone": "+265 77 8899 001",
+    "hours": "Mon, Wed, Fri: 8:00 AM - 5:00 PM",
+    "description": "Family-friendly dental practice focused on preventive care and patient comfort. Brightening smiles with compassionate dentistry.",
+    "mapLink": "https://www.google.com/maps/search/55+Pine+St,+Riverdale",
+    "bookingLink": "https://www.sunrisedental.com/appointment"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Emily Roberts",
+    "specialty": "General Practice",
+    "address": "88 Market St, Town Center",
+    "phone": "+265 88 9900 112",
+    "hours": "Mon-Thu: 9:00 AM - 4:00 PM",
+    "description": "Holistic general practice with a focus on patient well-being and personalized care plans for the whole family.",
+    "mapLink": "https://www.google.com/maps/search/88+Market+St,+Town+Center",
+    "bookingLink": "mailto:emily.roberts@careconnect.com?subject=Appointment"
+  },
+  {
+    "id": 9,
+    "name": "Blantyre Eye Clinic",
+    "specialty": "Ophthalmology",
+    "address": "15 Visionary Rd, Blantyre",
+    "phone": "+265 99 1122 334",
+    "hours": "Mon-Fri: 8:30 AM - 4:30 PM",
+    "description": "Specializing in comprehensive eye care, including examinations, surgical consultations, and optical services. Clear vision, better life.",
+    "mapLink": "https://www.google.com/maps/search/15+Visionary+Rd,+Blantyre",
+    "bookingLink": "mailto:info@blantyreye.com?subject=Eye Clinic Appointment"
+  },
+  {
+    "id": 10,
+    "name": "Chilobwe Pharmacy",
+    "specialty": "Pharmacy",
+    "address": "Shop 3, Chilobwe Market, Blantyre",
+    "phone": "+265 11 9988 776",
+    "hours": "Mon-Sun: 7:00 AM - 9:00 PM",
+    "description": "Your local community pharmacy offering prescription fulfillment, over-the-counter medicines, and health advice. We're here for your everyday health needs.",
+    "mapLink": "https://www.google.com/maps/search/Chilobwe+Market,+Blantyre",
+    "bookingLink": ""
+  },
+  {
+    "id": 11,
+    "name": "Mzuzu Mental Health Services",
+    "specialty": "Psychiatry",
+    "address": "22 Serene Ln, Mzuzu",
+    "phone": "+265 22 1100 998",
+    "hours": "Mon-Fri: 9:00 AM - 5:00 PM",
+    "description": "Confidential and compassionate mental health support for individuals and families. Promoting well-being through therapy and medication management.",
+    "mapLink": "https://www.google.com/maps/search/22+Serene+Ln,+Mzuzu",
+    "bookingLink": "mailto:mzuzumhs@careconnect.com?subject=Mental Health Inquiry"
+  },
+  {
+    "id": 12,
+    "name": "Lilongwe Dermatology Center",
+    "specialty": "Dermatology",
+    "address": "40 Skin Care Blvd, Lilongwe",
+    "phone": "+265 33 2211 009",
+    "hours": "Tue, Thu: 9:00 AM - 4:00 PM",
+    "description": "Expert care for skin, hair, and nail conditions. From acne to complex dermatological issues, we offer personalized treatment plans.",
+    "mapLink": "https://www.google.com/maps/search/40+Skin+Care+Blvd,+Lilongwe",
+    "bookingLink": "https://www.lilongwederm.com/appointment"
+  },
+  {
+    "id": 13,
+    "name": "Capital City Pharmacy",
+    "specialty": "Pharmacy",
+    "address": "Shop 10, Capital Mall, Lilongwe",
+    "phone": "+265 44 3322 110",
+    "hours": "Mon-Sat: 8:00 AM - 7:00 PM",
+    "description": "Conveniently located pharmacy with a wide range of medications, health products, and professional advice. Your trusted health partner.",
+    "mapLink": "https://www.google.com/maps/search/Capital+Mall,+Lilongwe",
+    "bookingLink": ""
+  },
+  {
+    "id": 14,
+    "name": "Dr. Sarah Chen",
+    "specialty": "Cardiology",
+    "address": "77 Heartbeat Dr, Central City",
+    "phone": "+265 55 4433 221",
+    "hours": "Mon, Wed, Fri: 9:00 AM - 4:00 PM",
+    "description": "Specializing in heart health, diagnostics, and treatment of cardiovascular diseases. Dedicated to keeping your heart healthy.",
+    "mapLink": "https://www.google.com/maps/search/77+Heartbeat+Dr,+Central+City",
+    "bookingLink": "mailto:sarah.chen@careconnect.com?subject=Cardiology Appointment"
+  },
+  {
+    "id": 15,
+    "name": "Thyolo Medical Clinic",
+    "specialty": "General Practice",
+    "address": "99 Tea Estate Rd, Thyolo",
+    "phone": "+265 66 5544 332",
+    "hours": "Mon-Fri: 8:00 AM - 4:00 PM",
+    "description": "Community clinic providing essential general medical services to the Thyolo region. Committed to accessible healthcare for all.",
+    "mapLink": "https://www.google.com/maps/search/99+Tea+Estate+Rd,+Thyolo",
+    "bookingLink": "mailto:thyoloclinic@careconnect.com?subject=General Checkup"
+  }
+]

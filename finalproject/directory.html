@@ -8,19 +8,19 @@
     <meta property="og:description" content="A site that provide information about hospitals, clinics and healthcare providers in Malawi. ">
     <meta property="og:url" content=" https://chagon-nehe.github.io/wdd231/finalproject/index.html">
     <meta property="og:image" content="images/healthcareconnectlogo.webp" >
-
-    <meta name="description" content="HealthcareConnect: Your local healthcare provider directory. Find doctors, clinics, dentists, and more.">
-    <link rel="icon" href="favicon.ico" type="image/ico">
+    <meta name="description" content="Browse and search local healthcare providers in the HealthcareConnect directory.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="favicon.ico" type="image/ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-<!-- Main CSS for global styles (header, footer, basic typography) -->
+    <!-- Main CSS for global styles (header, footer, basic typography) -->
     <link rel="stylesheet" href="styles/global.css">
-    <!-- Specific CSS for the home page -->
-    <link rel="stylesheet" href="styles/index.css">
+    <!-- Specific CSS for the directory page (grid/list views, cards) -->
+    <link rel="stylesheet" href="styles/directory.css">
 </head>
 <body>
     <header>
+         
         <div class="container">
             <div class="logo-box">
                 <img src="images/healthcareconnectlogo.webp" alt="Logo" class="center" 
@@ -28,11 +28,9 @@
                 <h1>HealthcareConnect</h1><h3>Your Local Healthcare Provider Directory</h3>  
             </span> 
             </div>
-            
-            <!--<img src="images/healthcareconnectlogo.webp" alt="HealthcareConnect Logo" class="logo">-->
             <nav class="header-nav">
-                <a href="index.html" class="nav-link active-nav">Home</a>
-                <a href="directory.html" class="nav-link">Directory</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="directory.html" class="nav-link active-nav">Directory</a>
                 <a href="join.html" class="nav-link">Join Us</a>
             </nav>
             <!--<button class="menu-toggle" aria-label="Toggle navigation">
@@ -46,14 +44,33 @@
     </header>
 
     <main class="container">
-        <!-- Home Section Content -->
-        <section id="home-section" class="content-section">
-            <h2>Welcome to HealthcareConnect!</h2>
-            <p>Your go-to resource for finding local healthcare providers and clinics. We aim to connect you with the right care, right in your neighborhood.</p>
-            <p>Whether you're looking for a General Practitioner, a Dentist, or a Physiotherapist, CareConnect makes it easy to find detailed information and connect directly with clinics.</p>
-            <a href="directory.html" class="cta-button">Explore Directory Now</a>
+        <!-- Directory Section Content -->
+        <section id="directory-section" class="content-section">
+            <h2>Healthcare Providers</h2>
+
+            <div class="view-toggle-menu">
+                <button id="gridBtn" class="active">Grid View</button>
+                <button id="listBtn">List View</button>
+            </div>
+
+            <div class="search-filter-controls">
+                <input type="text" id="search-input" placeholder="Search by name, specialty, or keywords...">
+                <select id="specialty-filter">
+                    <option value="all">All Specialties</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+
+            <section id="provider-list">
+                <p id="no-results" class="hidden">
+                    No providers found matching your criteria.
+                </p>
+                <!-- Provider cards will be dynamically added here by JavaScript -->
+            </section>
         </section>
     </main>
+
+    <p><strong>Note:</strong>All contacts and adresses used are just placeholders. Just for learning purposes. </p>
 
     <footer>
         <div class="container">
@@ -70,7 +87,7 @@
                 <img src="images/linkedin.png" alt="linkedin"></a>
         </nav>
     </footer>
-    <script src="scripts/shared.js"></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/shared.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </body>
 </html>
