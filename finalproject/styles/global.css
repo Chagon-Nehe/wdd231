@@ -121,7 +121,7 @@ footer {
 .last-visit-message {
     font-size: 0.9em;
     margin-top: 0.5rem;
-    color: var(--background-color); /* Slightly transparent white */
+    color: #fff; /* Slightly transparent white */
 }
 
 /* --- Modal Dialog Styles --- */

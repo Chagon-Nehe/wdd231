@@ -14,7 +14,7 @@
 }
 .view-toggle-menu button {
     background-color: var(--primary-color); /* Blue-500 */
-    color: var(--background-color);
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
