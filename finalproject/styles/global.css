@@ -75,7 +75,7 @@ header h1 {
 }
 
 .header-nav a {
-    color: white; /* White text for navigation links */
+    color: #000009; /* White text for navigation links */
     text-decoration: none; /* Remove the default underline from links */
     font-weight: 500; /* Medium font thickness */
     font-size: 1.3rem; /* Slightly larger font size for better readability */
@@ -121,7 +121,7 @@ footer {
 .last-visit-message {
     font-size: 1.2em;
     margin-top: 0.5rem;
-    color: #fff; /* Slightly transparent white */
+    color: #000009; /* Slightly transparent white */
 }
 
 /* --- Modal Dialog Styles --- */
