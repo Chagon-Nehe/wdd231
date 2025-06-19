@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Using a template literal (` `) to easily insert JavaScript variables into HTML
             card.innerHTML = `
                 <div>
-                    <h2>${provider.name}</h2>
+                    <h3>${provider.name}</h3>
                     <p class="specialty">${provider.specialty}</p>
                     <p>${provider.address}</p>
                     <p class="contact-details">Phone: ${provider.phone}<br>Hours: ${provider.hours}</p>
