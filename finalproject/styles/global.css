@@ -30,6 +30,10 @@ body {
     justify-content: flex-start; /* Center items vertically */
     gap: 1rem; /* Space between logo and text */
 }
+strong {
+    font-size: 3.1rem; /* Slightly larger font size for strong text */
+    font-weight: 600; /* Make strong text slightly bolder */
+}
 header img{
     width: 9rem; /* Set a fixed width for the logo */
     height: 9rem;
