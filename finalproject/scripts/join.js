@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const queryParams = new URLSearchParams(formData).toString(); // Convert to URL query string
 
         // Show the thank you modal (this function is available from shared.js)
-        showModal('Your submission has been received. Thank you for your interest in joining CareConnect!');
+        showModal('Your submission has been received. Thank you for your interest in joining HealthcareConnect!');
 
         // Redirect to the form-action.html page after a short delay
         // This gives the user time to see the modal before redirection.

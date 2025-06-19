@@ -15,8 +15,8 @@
 }
 body {
     font-family: 'Inter', sans-serif; /* Apply our chosen font */
-    background-color: #f0f2f5; /* A very light gray for the background */
-    color: #333; /* Dark gray for general text, good readability */
+    background-color: var(--background-color); /* A very light gray for the background */
+    color:var(--text-color); /* Dark gray for general text, good readability */
     min-height: 100vh; /* Make sure the body takes at least the full viewport height */
     display: flex; /* Use Flexbox to help position the footer at the bottom */
     flex-direction: column; /* Stack header, main, and footer vertically */
@@ -86,7 +86,7 @@ header h1 {
 
 .header-nav a:hover,
 .header-nav a.active-nav {
-    background-color: #4a5568; /* A slightly different gray for when you hover or the link is active */
+    background-color: var(--secondary-color); /* A slightly different gray for when you hover or the link is active */
 }
 
 /* Common styles for content sections */
@@ -109,7 +109,7 @@ header h1 {
 
 /* Styles for the website footer */
 footer {
-    background-color: #2d3748; /* Dark gray for footer background */
+    background-color: var(--text-color); /* Dark gray for footer background */
     color: white;
     padding: 1.5rem 0;
     text-align: center;
@@ -121,7 +121,7 @@ footer {
 .last-visit-message {
     font-size: 0.9em;
     margin-top: 0.5rem;
-    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: var(--background-color); /* Slightly transparent white */
 }
 
 /* --- Modal Dialog Styles --- */
@@ -155,14 +155,14 @@ footer {
 }
 
 .modal-content h3 {
-    color: #2d3748;
+    color: var(--secondary-color);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .modal-content p {
     font-size: 1.1rem;
-    color: #4a5568;
+    color: var(--secondary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -179,7 +179,7 @@ footer {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
 }
 

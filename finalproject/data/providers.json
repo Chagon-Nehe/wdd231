@@ -8,7 +8,7 @@
     "hours": "Mon-Fri: 8:00 AM - 5:00 PM",
     "description": "Experienced family physician offering comprehensive primary care for all ages, focusing on preventive health and patient education.",
     "mapLink": "https://www.google.com/maps/search/123+Main+St,+Central+City",
-    "bookingLink": "mailto:alice.johnson@careconnect.com?subject=Appointment Inquiry"
+    "bookingLink": "mailto:alice.johnson@healthcareconnect.com?subject=Appointment Inquiry"
   },
   {
     "id": 2,
@@ -41,7 +41,7 @@
     "hours": "Mon-Fri: 9:00 AM - 5:00 PM",
     "description": "Caring pediatrician focused on children's health from infancy to adolescence. Providing compassionate care for your little ones.",
     "mapLink": "https://www.google.com/maps/search/10+Downing+St,+Central+City",
-    "bookingLink": "mailto:ben.carter@careconnect.com?subject=Pediatric Appointment"
+    "bookingLink": "mailto:ben.carter@healthcareconnect.com?subject=Pediatric Appointment"
   },
   {
     "id": 5,
@@ -85,7 +85,7 @@
     "hours": "Mon-Thu: 9:00 AM - 4:00 PM",
     "description": "Holistic general practice with a focus on patient well-being and personalized care plans for the whole family.",
     "mapLink": "https://www.google.com/maps/search/88+Market+St,+Town+Center",
-    "bookingLink": "mailto:emily.roberts@careconnect.com?subject=Appointment"
+    "bookingLink": "mailto:emily.roberts@healthcareconnect.com?subject=Appointment"
   },
   {
     "id": 9,
@@ -118,7 +118,7 @@
     "hours": "Mon-Fri: 9:00 AM - 5:00 PM",
     "description": "Confidential and compassionate mental health support for individuals and families. Promoting well-being through therapy and medication management.",
     "mapLink": "https://www.google.com/maps/search/22+Serene+Ln,+Mzuzu",
-    "bookingLink": "mailto:mzuzumhs@careconnect.com?subject=Mental Health Inquiry"
+    "bookingLink": "mailto:mzuzumhs@healthcareconnect.com?subject=Mental Health Inquiry"
   },
   {
     "id": 12,
@@ -151,7 +151,7 @@
     "hours": "Mon, Wed, Fri: 9:00 AM - 4:00 PM",
     "description": "Specializing in heart health, diagnostics, and treatment of cardiovascular diseases. Dedicated to keeping your heart healthy.",
     "mapLink": "https://www.google.com/maps/search/77+Heartbeat+Dr,+Central+City",
-    "bookingLink": "mailto:sarah.chen@careconnect.com?subject=Cardiology Appointment"
+    "bookingLink": "mailto:sarah.chen@healthcareconnect.com?subject=Cardiology Appointment"
   },
   {
     "id": 15,
@@ -162,6 +162,6 @@
     "hours": "Mon-Fri: 8:00 AM - 4:00 PM",
     "description": "Community clinic providing essential general medical services to the Thyolo region. Committed to accessible healthcare for all.",
     "mapLink": "https://www.google.com/maps/search/99+Tea+Estate+Rd,+Thyolo",
-    "bookingLink": "mailto:thyoloclinic@careconnect.com?subject=General Checkup"
+    "bookingLink": "mailto:thyoloclinic@healthcareconnect.com?subject=General Checkup"
   }
 ]
