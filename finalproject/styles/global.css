@@ -86,7 +86,7 @@ header h1 {
 
 .header-nav a:hover,
 .header-nav a.active-nav {
-    background-color: var(--secondary-color); /* A slightly different gray for when you hover or the link is active */
+    background-color: var(--background-color); /* A slightly different gray for when you hover or the link is active */
 }
 
 /* Common styles for content sections */
