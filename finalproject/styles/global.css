@@ -31,7 +31,7 @@ body {
     gap: 1rem; /* Space between logo and text */
 }
 strong {
-    font-size: 3.1rem; /* Slightly larger font size for strong text */
+    font-size: 2.1rem; /* Slightly larger font size for strong text */
     font-weight: 600; /* Make strong text slightly bolder */
 }
 header img{
